@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minha Loja</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        👕 MINHA LOJA
+    </div>
+
+    <button class="botao-carrinho" onclick="abrirCarrinho()">
+        🛒 Carrinho
+        <span id="quantidadeCarrinho">0</span>
+    </button>
+
+</header>
+
+
+<section class="banner">
+
+    <div>
+        <p class="pequeno">NOVA COLEÇÃO</p>
+
+        <h1>
+            Seu estilo.<br>
+            Seu jeito.
+        </h1>
+
+        <p>
+            Roupas modernas para todos os momentos.
+        </p>
+
+        <a href="#produtos" class="botao">
+            Ver produtos
+        </a>
+    </div>
+
+</section>
+
+
+<main>
+
+    <section id="produtos" class="produtos">
+
+        <h2>Nossos produtos</h2>
+
+        <div id="listaProdutos" class="grid-produtos"></div>
+
+    </section>
+
+</main>
+
+
+<!-- CARRINHO -->
+
+<div id="fundoCarrinho"
+     class="fundo-carrinho"
+     onclick="fecharCarrinho()">
+</div>
+
+
+<aside id="carrinho" class="carrinho">
+
+    <div class="topo-carrinho">
+
+        <h2>🛒 Seu carrinho</h2>
+
+        <button onclick="fecharCarrinho()">
+            ✕
+        </button>
+
+    </div>
+
+
+    <div id="itensCarrinho"></div>
+
+
+    <div class="final-carrinho">
+
+        <div class="total">
+
+            <span>Total:</span>
+
+            <strong id="total">
+                R$ 0,00
+            </strong>
+
+        </div>
+
+
+        <button
+            class="finalizar"
+            onclick="finalizarCompra()">
+
+            Finalizar pedido
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+<footer>
+
+    <h3>👕 MINHA LOJA</h3>
+
+    <p>
+        Moda, estilo e personalidade.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
